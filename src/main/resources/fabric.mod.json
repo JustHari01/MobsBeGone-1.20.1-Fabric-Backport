@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "mobsbegone",
+  "version": "${version}",
+  "name": "MobsBeGone (Unofficial 1.20.1 Backport)",
+  "description": "Unofficial Fabric 1.20.1 backport of MobsBeGone by Okaeri Game Studio; not affiliated with the original authors.",
+  "authors": ["Okaeri Game Studio (original)", "Olivia", "EasyMochi", "JustHari01 (backport)"],
+  "icon": "assets/mobsbegone/icon.png",
+  "contact": {
+    "homepage": "https://modrinth.com/mod/mobsbegone"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+	"main": [
+	  "moe.okaeri.mobsbegone.MobsBeGone"
+	]
+  },
+  "mixins": [
+	"mobsbegone.mixins.json"
+  ],
+  "depends": {
+	"fabricloader": ">=${loader_version}",
+	"fabric": "*",
+	"fabric-api": "*",
+	"minecraft": "${minecraft_version}"
+  }
+}
